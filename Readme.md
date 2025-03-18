@@ -12,3 +12,16 @@ Depois clique no ícone do topo do arquivo com a setinha que possui a label **ab
     "python.languageServer": "Pylance"
 }
 ```
+
+
+No cabeçalho dos códigos python, utilize
+
+```py
+from __future__ import annotations # permite referenciar o tipo nos protótipos dos métodos
+
+
+class Node:
+    def __init__(self, data: int, next: Node | None = None) -> None:
+        self.data = data
+        self.next = next
+```

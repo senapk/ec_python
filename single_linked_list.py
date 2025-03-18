@@ -1,4 +1,4 @@
-from __future__ import annotations
+from __future__ import annotations # permite referenciar o tipo nos protótipos dos métodos
 
 class Node:
     def __init__(self, data: int, next: Node | None = None) -> None:
